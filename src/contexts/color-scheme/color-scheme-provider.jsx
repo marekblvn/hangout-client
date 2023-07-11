@@ -9,7 +9,7 @@ const ColorSchemeProvider = ({ children }) => {
     if (userPrefersDarkScheme) {
       setScheme("dark");
     }
-  }, []);
+  }, [userPrefersDarkScheme]);
   const toggleColorScheme = () => {
     if (scheme === "light") {
       setScheme("dark");

@@ -1,5 +1,4 @@
-import { createTheme } from "@mui/material";
-const getDesignTokens = (mode) => ({
+const getColorScheme = (mode) => ({
   palette: {
     mode,
     ...(mode === "light"
@@ -29,19 +28,5 @@ const getDesignTokens = (mode) => ({
         }),
   },
 });
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#5D3891",
-    },
-    secondary: {
-      main: "#F99417",
-    },
-    background: {
-      main: "#F5F5F5",
-      contrastText: "#191919",
-    },
-  },
-});
 
-export default theme;
+export default getColorScheme;

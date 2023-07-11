@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Auth0Provider } from "@auth0/auth0-react";
-import { ThemeProvider } from "@mui/material";
 import ColorSchemeProvider from "./contexts/color-scheme/color-scheme-provider";
 import App from "./App";
 import "./index.css";
-import theme from "./utils/theme";
+import ThemeWrapper from "./components/theme-wrapper";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,9 +17,9 @@ root.render(
       }}
     >
       <ColorSchemeProvider>
-        <ThemeProvider theme={theme}>
+        <ThemeWrapper>
           <App />
-        </ThemeProvider>
+        </ThemeWrapper>
       </ColorSchemeProvider>
     </Auth0Provider>
   </React.StrictMode>
