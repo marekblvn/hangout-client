@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Auth0Provider } from "@auth0/auth0-react";
+import { ThemeProvider } from "@mui/material";
 import App from "./App";
 import "./index.css";
+import theme from "./utils/theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +16,9 @@ root.render(
         redirect_uri: window.location.pathname,
       }}
     >
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </Auth0Provider>
   </React.StrictMode>
 );
