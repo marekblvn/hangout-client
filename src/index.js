@@ -10,10 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-wdjg5l36.us.auth0.com"
-      clientId="rR2MG0uuOeJ6IRs9YlOuznro4pttV3mB"
+      domain="hangout-dev.eu.auth0.com"
+      clientId="CJGXCYrGzkmA0hq2HgR72Q4zHmACVMXJ"
       authorizationParams={{
-        redirect_uri: window.location.pathname,
+        redirect_uri: window.location.origin,
       }}
     >
       <ColorSchemeProvider>

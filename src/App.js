@@ -1,10 +1,11 @@
 import React from "react";
-import { useTheme } from "@mui/material";
+import LoginButton from "./components/login-button";
 
 const App = () => {
   return (
     <div>
       <p>App</p>
+      <LoginButton />
     </div>
   );
 };
