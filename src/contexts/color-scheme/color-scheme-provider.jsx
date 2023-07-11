@@ -23,3 +23,5 @@ const ColorSchemeProvider = ({ children }) => {
     </ColorSchemeContext.Provider>
   );
 };
+
+export default ColorSchemeProvider;

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Auth0Provider } from "@auth0/auth0-react";
 import { ThemeProvider } from "@mui/material";
-import { ColorSchemeProvider } from "./contexts/color-scheme/color-scheme-provider";
+import ColorSchemeProvider from "./contexts/color-scheme/color-scheme-provider";
 import App from "./App";
 import "./index.css";
 import theme from "./utils/theme";
